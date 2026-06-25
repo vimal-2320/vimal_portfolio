@@ -1335,8 +1335,36 @@ export default function VimalPortfolio() {
               <div className="project-category">{p.category}</div>
               <p className="project-desc">{p.desc}</p>
               <div className="project-tags">
-                {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
-              </div>
+  {p.tags.map(t => (
+    <span key={t} className="tag">{t}</span>
+  ))}
+</div>
+
+{p.live && (
+<a
+href={p.live}
+target="_blank"
+rel="noopener noreferrer"
+style={{
+display: "inline-block",
+marginTop: "24px",
+padding: "12px 24px",
+background: "linear-gradient(135deg, var(--accent), var(--accent2))",
+color: "var(--bg)",
+textDecoration: "none",
+borderRadius: "10px",
+fontWeight: "600"
+}}
+
+>
+
+```
+🌐 Live Demo
+```
+
+  </a>
+)}
+
             </div>
           ))}
         </div>
@@ -1363,7 +1391,7 @@ export default function VimalPortfolio() {
               desc: "Observed coil winding processes, in-process quality inspection protocols, and instrument calibration on the production floor. Familiarised with shop-floor instrumentation, safety interlock systems, and standard operating procedures.",
             },
             {
-              date: "2025",
+              date: "June 2026 · 8 Days",
               title: "MERN Stack Full Training",
               org: "Frontend & Backend Development",
               desc: "Comprehensive training covering React.js, Node.js, Express.js, MongoDB, REST API design, JavaScript ES6+, and Postman for API testing. Built production-ready full-stack applications.",
