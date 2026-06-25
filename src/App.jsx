@@ -1060,42 +1060,60 @@ const SKILL_CATEGORIES = {
 };
 
 const PROJECTS = [
-  {
-    num: "01",
-    name: "Knee Motion Analysis System",
-    category: "IoT / Embedded Systems",
-    desc: "Real-time joint-angle measurement system using accelerometer & gyroscope sensors with Arduino. Applied complementary filter algorithm to fuse sensor data for flexion-extension angle extraction with reduced drift.",
-    tags: ["Arduino", "IMU Sensors", "C", "Embedded"],
-  },
-  {
-    num: "02",
-    name: "IoT-Based Vehicle Safety System",
-    category: "IoT / Arduino",
-    desc: "Collision-prevention system using HC-SR04 ultrasonic sensors with threshold-triggered relay and buzzer actuation. Designed for real-time obstacle detection and automated response.",
-    tags: ["Arduino", "HC-SR04", "IoT", "Safety"],
-  },
-  {
-    num: "03",
-    name: "Universal Charging Adapter",
-    category: "SolidWorks / CAD",
-    desc: "Multi-standard charging adapter prototype designed in SolidWorks with GD&T tolerancing and assembly constraints. Created detailed part drawings and BOM for rapid prototyping.",
-    tags: ["SolidWorks", "GD&T", "CAD", "3D Modelling"],
-  },
-  {
-    num: "04",
-    name: "PDF Translator Chatbot",
-    category: "Python / Web / AI",
-    desc: "End-to-end web chatbot that ingests PDF documents and returns translated text via Python NLP pipeline. Responsive HTML/CSS frontend integrated with a Python backend for document parsing.",
-    tags: ["Python", "NLP", "HTML", "CSS"],
-  },
-  {
-    num: "05",
-    name: "Urban Sentinel – Climate Portal",
-    category: "Web Development",
-    desc: "Fully responsive, multi-section informational website on climate change using semantic HTML5 and CSS. Structured content covering causes, impacts, and community action plans with an accessible UI.",
-    tags: ["HTML5", "CSS3", "Responsive", "Semantic"],
-  },
+{
+num: "01",
+name: "Knee Motion Analysis System",
+category: "IoT / Embedded Systems",
+desc: "Real-time joint-angle measurement system using accelerometer & gyroscope sensors with Arduino. Applied complementary filter algorithm to fuse sensor data for flexion-extension angle extraction with reduced drift.",
+tags: ["Arduino", "IMU Sensors", "C", "Embedded"],
+},
+{
+num: "02",
+name: "IoT-Based Vehicle Safety System",
+category: "IoT / Arduino",
+desc: "Collision-prevention system using HC-SR04 ultrasonic sensors with threshold-triggered relay and buzzer actuation. Designed for real-time obstacle detection and automated response.",
+tags: ["Arduino", "HC-SR04", "IoT", "Safety"],
+},
+{
+num: "03",
+name: "Universal Charging Adapter",
+category: "SolidWorks / CAD",
+desc: "Multi-standard charging adapter prototype designed in SolidWorks with GD&T tolerancing and assembly constraints. Created detailed part drawings and BOM for rapid prototyping.",
+tags: ["SolidWorks", "GD&T", "CAD", "3D Modelling"],
+},
+{
+num: "04",
+name: "PDF Translator Chatbot",
+category: "Python / Web / AI",
+desc: "End-to-end web chatbot that ingests PDF documents and returns translated text via Python NLP pipeline. Responsive HTML/CSS frontend integrated with a Python backend for document parsing.",
+tags: ["Python", "NLP", "HTML", "CSS"], 
+},
+{
+num: "05",
+name: "Urban Sentinel – Climate Portal",
+category: "Web Development",
+desc: "Fully responsive, multi-section informational website on climate change using semantic HTML5 and CSS.",
+tags: ["HTML5", "CSS3", "Responsive", "Semantic"],
+live: "https://urban-sentinel-agents.vercel.app/"
+},
+{
+num: "06",
+name: "Attendance Management System",
+category: "MERN Stack / Full Stack Development",
+desc: "A full-stack Attendance Management System built using React.js, Node.js, Express.js, MongoDB and deployed on Render. The system allows administrators to mark attendance, export daily attendance reports to Excel sheets, and manage student records. Students marked absent can submit their absence reasons, which are reviewed by the administrator. The application includes secure role-based login for both Admin and Students with a responsive modern UI.",
+tags: [
+"React.js",
+"Node.js",
+"Express.js",
+"MongoDB",
+"Render",
+"Excel Export",
+"REST API"
+],
+live: "https://attendance-management-system-frontend-etbg.onrender.com/"
+}
 ];
+
 
 const ACHIEVEMENTS = [
   { icon: "🏆", title: "₹3,500 Cash Prize – 1st Place", desc: "Paper Presentation, KIT Coimbatore" },
